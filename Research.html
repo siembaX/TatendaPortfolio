@@ -3,68 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
-        <!-- Links -->
-        <link rel="stylesheet" href="./External Files/bootstrap-5.0.2-dist/css/bootstrap.css">
-        <link rel="stylesheet" href="./External Files/Stylesheet/CSS/style.css">
-        <link rel="stylesheet" href="./External Files/Stylesheet/CSS/nav.css">
-
-        <!-- Links -->
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <!-- Fonts -->
+    <title>Homepage</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="./External_Files/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./External_Files/Stylesheet/CSS/style.css">
+    <link rel="stylesheet" href="./External_Files/Stylesheet/CSS/navigation.css">
+    <link rel="stylesheet" href="./External_Files/Stylesheet/CSS/breakpoints.css">
+    <!-- Links -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
 </head>
 <body>
-      <!-- NAVIGATION MENU -->
+<!-- NAVIGATION MENU -->
 <div class="container">
-    <div class="socials-alignment">
-      <div class="socials-icons">
-        <object data="./Assets/Icons/Linkedin.svg" type="" width="20" height="20"></object>
-        <object data="./Assets/Icons/IG.svg" type="" width="20" height="20"></object>
-        <object data="./Assets/Icons/FB-B.svg" type="" width="20" height="20"></object>
-        <object data="./Assets/Icons/X.svg" type="" width="20" height="20"></object>
-      </div>
+  <div class="socials-alignment">
+    <div class="socials-icons">
+      <object data="./Assets/Icons/Linkedin.svg" type="" width="20" height="20"></object>
+      <object data="./Assets/Icons/IG.svg" type="" width="20" height="20"></object>
+      <object data="./Assets/Icons/FB-B.svg" type="" width="20" height="20"></object>
+      <object data="./Assets/Icons/X.svg" type="" width="20" height="20"></object>
     </div>
   </div>
-  <div class="navbar">
-    <div class="nav-logo">
-      <a href="./index.html">Tatenda K</a>
-    </div>
-    <div class="nav-items">
-      <ul>
-        <li><a href="./About.html"> About </a></li>
-        <li><a href="./Research.html"> Research </a></li>
-        <li><a href="./Published.html"> Published Work </a></li>
-        <li><a href="./Moredetail.html"> Mizfits </a></li>
-        <li><a href="./contact.html"> Contact </a></li>
-      </ul>
-    </div>
-    <div class="nav-button">
-      <div class="anim-layer"></div>
-      <!-- <a href="#">Sign Up</a> -->
-    </div>
-    <div id="hamburger-menu">&#9776;</div>
-  </div>
-  
-  <div id="mobile-menu">
-    <div class="mobile-nav-items">
-      <ul>
-        <li><a href="#"> Home </a></li>
-        <li><a href="#"> Services </a></li>
-        <li><a href="#"> About </a></li>
-        <li><a href="#"> Contact </a></li>
-        <li><a href="#"> Home </a></li>
-      </ul>
-    </div>
-    <div class="mobile-nav-button">
-      <div class="anim-layer"></div>
-      <a href="#">Sign Up</a>
-    </div>
-    <div id="hamburger-cross">&#10006;</div>
-  </div>
-  <!-- NAVIGATION MENU -->
+</div>
+<!--=============== HEADER ===============-->
+<header class="header">
+  <nav class="nav container">
+     <div class="nav__data">
+        <a href="./index.html" class="nav__logo">
+         Tatenda K
+        </a>
+        
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+       </div>
+     </div>
+
+     <!--=============== NAV MENU ===============-->
+     <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li><a href="./About.html" class="nav__link">About</a></li>
+
+           <li><a href="./Research.html" class="nav__link">Research</a></li>
+
+           <!--=============== DROPDOWN 1 ===============-->
+           <li class="dropdown__item">
+              <div class="nav__link">
+                 Published Work <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                 <li>
+                    <a href="./CLMedia.html" class="dropdown__link">
+                       <i class="ri-pie-chart-line"></i> Articles
+                    </a>                          
+                 </li>
+
+                 <li>
+                    <a href="./CLMedia2.html" class="dropdown__link">
+                       <i class="ri-arrow-up-down-line"></i> CLI Media
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="./Wellness.html" class="dropdown__link">
+                       <i class="ri-arrow-up-down-line"></i> Wellness
+                    </a>
+                 </li>
+              </ul>
+           </li>
+           
+           <li><a href="./Blog.html" class="nav__link">Mizfits</a></li>
+           <li><a href="./contact.html" class="nav__link">Contact</a></li>
+        </ul>
+     </div>
+  </nav>
+</header>
+
+<!-- NAVIGATION MENU -->
+
   <section id="Hero">
     <!-- Slider -->
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -185,6 +205,7 @@
         </div>
       </footer>
 </body>
-<script src="./External Files/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+<script src="./External_Files/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+<script src="./External_Files/JS/main.js"></script>
 </html>
 

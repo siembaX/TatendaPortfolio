@@ -1,5 +1,14 @@
 
 /* Resets */
+
+.puppies-play-regular {
+
+  }
+
+  .styleda{
+    font-family: "Puppies Play", cursive;
+  }
+
 img{
     max-width: 100%;
     vertical-align: middle;
@@ -375,6 +384,7 @@ img{
         margin-top: 50px;
 
         form{
+            
             input{
                 width: 100%;
                 height: 40px;
