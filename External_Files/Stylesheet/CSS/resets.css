@@ -9,3 +9,7 @@
 .D-vertical-spacing{
     margin-top: 70px;
 }
+
+body{
+    overflow-x: hidden;
+}

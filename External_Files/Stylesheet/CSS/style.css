@@ -72,12 +72,10 @@ li{
 }
 
 #explorations-section{
-    min-height: 100vh;
-    padding: 50px 0;
+    min-height: 70vh;
 
     h5{
         text-align: center;
-        padding: 40px 0;
     }
 
     .modified-cards{
@@ -310,6 +308,8 @@ footer{
             grid-template-columns: 1fr 1fr ;  
             gap: 1px;
         }
+
+        
     }
 
 }
@@ -460,5 +460,13 @@ img{
     .part2-div{
         display: flex;
         justify-content: center;
+    }
+}
+
+/* BLOG SECTION */
+
+#Blog-Section{
+    p{
+        text-align: center;
     }
 }
