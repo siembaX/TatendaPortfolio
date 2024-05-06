@@ -86,8 +86,8 @@ a {
   display: inline-flex;
   align-items: center;
   column-gap: .25rem;
-  font-weight: normal;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 35px;
   /* Color highlighting when pressed on mobile devices */
   /*-webkit-tap-highlight-color: transparent;*/
 }

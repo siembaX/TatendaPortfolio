@@ -73,25 +73,32 @@ li{
 
 #explorations-section{
     min-height: 70vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
-    h5{
-        text-align: center;
+    @media (min-height : 0px) and (max-width : 767px){
+
     }
 
-    .modified-cards{
+    .cards-inrow{
+        
         display: grid;
-        grid-template-columns: 35% 35% 35%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
 
-        @media (min-height : 0px) and (max-width : 767px){
-            display: grid;
-            grid-template-columns: 35%;
+        @media (min-width : 200px) and (max-width : 576px){
+            grid-template-columns: 1fr;
         }
 
-        @media (min-height : 768px) and (max-width : 991px){
-            display: grid;
-            grid-template-columns: 35%;
+        @media (min-width : 576px) and (max-width : 992px){
+            grid-template-columns: 1fr 1fr;
         }
+
     }
+
+
 }
 
 .card{
@@ -212,6 +219,18 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        @media (min-width : 200px) and (max-width : 576px){
+            flex-direction: column;
+        }
+    
+        @media (min-width : 576px) and (max-width : 992px){
+            flex-direction: column;
+        }
+
+        p{
+            opacity: 60%;
+        }
     }
     
    nav{
@@ -222,6 +241,10 @@ footer{
         flex-direction: row;
         justify-content: center;
         gap: 40px;
+
+        @media (min-width : 200px) and (max-width : 576px){
+            gap: 10px;
+        }
         
         
         li{
@@ -256,6 +279,14 @@ footer{
         padding: 10px 10px;
         width: 650px;
         background-color: transparent;
+
+        @media (min-width : 200px) and (max-width : 576px){
+            width: 150px;
+        }
+
+        @media (min-width : 576px) and (max-width : 992px){
+            width: 200px;
+        }
     }
 
     button{
@@ -349,11 +380,6 @@ object{
     opacity: 40%;
 }
 
-.copyright-text{
-    p{
-        opacity: 60%;
-    }
-}
 
 /* REASEARCH SECTION */
 
@@ -472,22 +498,31 @@ img{
 }
 
 
-/* styless  mods*/
+/* Patner Logo Section */
 .partner-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+    @media (min-width : 200px) and (max-width : 576px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width : 576px) and (max-width : 992px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    
 }
 
-.partner-logo {
-    flex: 0 0 auto;
-    width: 150px; 
-    text-align: center;
+.all-logos-container{
+    display: flex;
+    justify-content: center;
 }
 
 .partner-logo img {
-    max-width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -496,15 +531,24 @@ img{
     width: 30px;
     height: 7px;
     border-radius: 10;
+
 }
 
+
+
+
+
 .caraheight{
-    height: 93vh;
+    /* height: 93vh; */
+    height: auto;max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    object-fit: contain;
 
 }
+
+
 
 .carousel-overlay {
     position: absolute;
@@ -526,6 +570,10 @@ img{
     opacity: 1;
 }
 
+.down-arrow{
+    width: 10px;
+    height: 10px;
+}
 
 
 

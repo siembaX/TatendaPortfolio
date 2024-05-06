@@ -6,7 +6,9 @@
     <title>Home</title>
     <!-- Links -->
     <link rel="stylesheet" href="./External_Files/bootstrap-5.0.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./External_Files/Stylesheet/CSS/test.css">
+    <link rel="stylesheet" href="./External_Files/Stylesheet/CSS/style.css">
+    <link rel="stylesheet" href="./External_Files/Stylesheet/CSS/navigation.css">
+    <link rel="stylesheet" href="./External_Files/Stylesheet/CSS/resets.css">
     <!-- Links -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +52,7 @@
            <!--=============== DROPDOWN 1 ===============-->
            <li class="dropdown__item">
               <div class="nav__link">
-                 Published Work <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                 <a href="./Published.html">Published Work <img class="down-arrow" src="./Assets/Icons/down.png" alt=""></a>
               </div>
 
               <ul class="dropdown__menu">
@@ -68,7 +70,7 @@
 
                  <li>
                     <a href="./Wellness.html" class="dropdown__link">
-                       <i class="ri-arrow-up-down-line"></i> Published
+                       <i class="ri-arrow-up-down-line"></i> Wellness
                     </a>
                  </li>
               </ul>
@@ -83,29 +85,268 @@
 
 <!-- NAVIGATION MENU -->
 
-<section>
-    <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
-            <img src="./Assets/Icons/BE.png" alt="">
+<section id="Hero">
+  <!-- Slider -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-overlay">
+                  <h5>WELCOME</h5>
+                  <p>POP UP TEXT</p>
+              </div>
+              <img src="./Assets/Images/Carousel/IMG6.jpg" class="d-block w-100 caraheight" alt="Carousel">
           </div>
-          <div class="slide">
-            <img src="./Assets/Icons/Caligraph.png" alt="">
+          <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-overlay">
+                  <h5>WELCOME</h5>
+                  <p>POP UP TEXT</p>
+              </div>
+              <img src="./Assets/Images/Carousel/IMG7.jpg" class="d-block w-100 caraheight" alt="...">
           </div>
-          <div class="slide">
-            <img src="./Assets/Icons/Dulux.png" alt="">
+          <div class="carousel-item">
+              <div class="carousel-overlay">
+                  <h5>WELCOME</h5>
+                  <p>POP UP TEXT</p>
+              </div>
+              <img src="./Assets/Images/hero-image.png" class="d-block w-100 " alt="...">
           </div>
-          <div class="slide">
-            <img src="./Assets/Icons/Econet.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="./Assets/Icons/Probrands.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="./Assets/Icons/Unicef.png" alt="">
+      </div>
+  </div>
+  <!-- End Slider -->
+</section>
+
+
+    <!-- Hero Text -->
+    <div id="fineart-section">
+        <div class="container">
+            <div class="row center-all">
+                <div class="col-lg-4 col-md-4">
+                    <h5>FINE ART DOCUMENTARY &
+                        STREET PHOTOGRAPHER</h5>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-6 col-md-6 wrap-breakword">
+                    <p>I am a Fine Art Documentary and Street Photographer who provides professional services 
+
+                        for People and Companies who aim to represent their image in an original and artistic way. I 
+                        
+                        hope you will enjoy your time here and find what you were looking for.</p>
+                </div>
+            </div>
+            <!-- Lines  -->
+                <!-- <div class="container">
+            _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+                </div> -->
+           <!-- Lines -->
+        </div>
+    </div>
+    <!-- Hero Text Ends -->
+    <div class="D-vertical-spacing"></div>
+    <section id="explorations-section">
+
+        <h5>LATEST EXPLORATIONS</h5>
+        
+        <div class="vertical-spacing"></div>
+        <!-- My Cards Start Here -->
+        
+          <div class="row cards-inrow">
+
+            <div class="all-mycards">
+              <div class="card profile-card-5">
+                <div class="card-img-block">
+                  <img class="card-img-top" src="./Assets/Images/Carousel/IMG5.JPG" alt="Card image cap">
+                </div>
+                <div class="card-body pt-0">
+                  <h6 class="card-title">Travel | Mbare, the Vibrant Suburb of Harare</h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis </p>
+                </div>
+              </div>
+            </div>
+
+           
+
+            <div class="all-mycards">
+              <div class="card profile-card-5">
+                <div class="card-img-block">
+                  <img class="card-img-top" src="./Assets/Images/Carousel/IMG8.JPG" alt="Card image cap">
+                </div>
+                <div class="card-body pt-0">
+                  <h6 class="card-title">Travel | Mbare, the Vibrant Suburb of Harare</h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis </p>
+                </div>
+              </div>
+              </div>
+
+          
+
+              <div class="all-mycards">
+                <div class="card profile-card-5">
+                  <div class="card-img-block">
+                    <img class="card-img-top" src="./Assets/Images/Carousel/IMG7.JPG" alt="Card image cap">
+                  </div>
+                  <div class="card-body pt-0">
+                    <h6 class="card-title">Travel | Mbare, the Vibrant Suburb of Harare</h6>
+                    <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                      enim ad minim veniam, quis </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="all-mycards">
+               <div class="card profile-card-5">
+                 <div class="card-img-block">
+                   <img class="card-img-top" src="./Assets/Images/Carousel/IMG1.JPG" alt="Card image cap">
+                 </div>
+                 <div class="card-body pt-0">
+                   <h6 class="card-title">Travel | Mbare, the Vibrant Suburb of Harare</h6>
+                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                     enim ad minim veniam, quis </p>
+                 </div>
+               </div>
+             </div>
+ 
+        
+ 
+             <div class="all-mycards">
+               <div class="card profile-card-5">
+                 <div class="card-img-block">
+                   <img class="card-img-top" src="./Assets/Images/Carousel/IMG2.JPG" alt="Card image cap">
+                 </div>
+                 <div class="card-body pt-0">
+                   <h6 class="card-title">Travel | Mbare, the Vibrant Suburb of Harare</h6>
+                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                     enim ad minim veniam, quis </p>
+                 </div>
+               </div>
+               </div>
+ 
+     
+ 
+               <div class="all-mycards">
+                 <div class="card profile-card-5">
+                   <div class="card-img-block">
+                     <img class="card-img-top" src="./Assets/Images/Carousel/IMG3.JPG" alt="Card image cap">
+                   </div>
+                   <div class="card-body pt-0">
+                     <h6 class="card-title">Travel | Mbare, the Vibrant Suburb of Harare</h6>
+                     <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                       enim ad minim veniam, quis </p>
+                   </div>
+                 </div>
+               </div>
+              <!-- end of row -->
           </div>
         </div>
-      </div>
-</section>
+        <!-- My Cards End Here! -->
+        <!-- Second Stack of cards -->
+        <div class="vertical-spacing"></div>
+        <!-- My Cards Start Here -->
+        <!-- end of stack 2 -->
+
+      </section>
+
+      <!-- Clients Section -->
+      <section id="clients-section">
+            <div class="container">
+              <h5>CLIENTS</h5>
+            </div>
+
+            
+              <div class="all-logos-container">
+                <div class="partner-logos">
+                  <div class="partner-logo">
+                      <img src="./Assets/Icons/Caligraph.png" alt="Caligraph Logo">
+                  </div>
+                  <div class="partner-logo">
+                      <img src="./Assets/Icons/Econet.png" alt="Econet Logo">
+                  </div>
+                  <div class="partner-logo">
+                      <img src="./Assets/Icons/Probrands.png" alt="Probrands Logo">
+                  </div>
+                  <div class="partner-logo">
+                      <img src="./Assets/Icons/Dulux.png" alt="Dulux Logo">
+                  </div>
+                  <div class="partner-logo">
+                      <img src="./Assets/Icons/Unicef.png" alt="Unicef Logo">
+                  </div>
+                  <div class="partner-logo">
+                      <img src="./Assets/Icons/BE.png" alt="BE Logo">
+                  </div>
+                            </div>
+              </div>
+      </section>
+      <!-- End of Section -->
+
+      <!-- Newsletter Section -->
+      <section id="newsletter-section">
+        <div class="container">
+            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+            <p>                incididunt ut labore et dolore magna aliqua.at.</p>
+        </div>
+        <div class="box">
+          <form action="#">
+            <div class="form-box">
+              <input type="text" name="EmailAddress" placeholder="Enter Email....">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Section ends! -->
+
+      <section id="follow-section">
+        <div class="container">
+          <h5>FOLLOW ME ON INSTAGRAM</h5>
+        </div>
+        <div class="mygrid-container">
+          <img src="./Assets/Images/footer1.png" alt="">
+          <img src="./Assets/Images/footer2.png" alt="">
+          <img src="./Assets/Images/footer1.png" alt="">
+          <img src="./Assets/Images/footer4full.png" alt="">
+
+          <div class="extra-div">
+            <div class="brand_name_text">
+              <p><a href="">TATENDA_KANENGONI</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+          <nav>
+            <ul>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Research">Research</a></li>
+              <li><a href="#Published Work">Published</a></li>
+              <li><a href="#Blog">Blog</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <p>all pictures are copyright of</p>
+          <h6>TATENDA KANENGONI</h6>
+          <p>Fine Art & Documentary photographer</p>
+        
+        <div class="container">
+          <div class="copyright-text">
+            <p>COPYRIGHT © 2024 TATENDA KANENGONI</p>
+            <div class="socials-icons">
+              <object data="./Assets/Icons/Linkedin.svg" type="" width="20" height="20"></object>
+              <object data="./Assets/Icons/IG.svg" type="" width="20" height="20"></object>
+              <object data="./Assets/Icons/FB-B.svg" type="" width="20" height="20"></object>
+              <object data="./Assets/Icons/X.svg" type="" width="20" height="20"></object>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./External_Files/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+      <script src="./External_Files/JS/main.js"></script>
 </body>
 </html>
