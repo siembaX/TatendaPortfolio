@@ -502,7 +502,7 @@ img{
 .partner-logos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
 
     @media (min-width : 200px) and (max-width : 576px){
         grid-template-columns: 1fr 1fr 1fr;
@@ -516,10 +516,7 @@ img{
     
 }
 
-.all-logos-container{
-    display: flex;
-    justify-content: center;
-}
+
 
 .partner-logo img {
     width: 50%;

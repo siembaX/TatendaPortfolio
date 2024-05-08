@@ -88,8 +88,6 @@ a {
   column-gap: .25rem;
   font-weight: 500;
   font-size: 35px;
-  /* Color highlighting when pressed on mobile devices */
-  /*-webkit-tap-highlight-color: transparent;*/
 }
 
 .nav__logo i {
@@ -144,7 +142,6 @@ a {
 .nav__link {
   color: black;
   font-family: "Quicksand", sans-serif;
-
   font-weight: normal;
   padding: 1.25rem 1.5rem;
   display: flex;
